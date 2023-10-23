@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio Website</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/606f5223ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/logo4.png" alt="logo" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#myprojects">Projects</a></li>
+          <li><a href="#certificates">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi, I am <span>Jitendra</span></h1>
+      </div>
+    </div>
+  </div>
+  <!-- ---------- about --------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/photo2.jpg" alt="user" />
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam veniam facere magni earum quis dicta
+            perspiciatis explicabo, corrupti et quidem repudiandae non, doloribus nulla libero natus ad consectetur quod
+            necessitatibus.
+            Cumque vero accusantium veritatis quas recusandae, ut id possimus eum culpa labore porro ipsam
+            necessitatibus.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+            <p class="tab-links" onclick="openTab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Java</span><br />Developing Backend applications</li>
+              <li><span>Spring Boot</span><br />Web App Development</li>
+              <li><span>Hibernate</span><br />Maintaining Database</li>
+              <li><span>JavaScript</span><br />Developing Backend applications</li>
+              <li><span>TypeScript</span><br />Web App Development</li>
+              <li><span>React</span><br />Maintaining Database</li>
+              <li><span>Angular</span><br />Maintaining Database</li>
+              <li><span>Git</span><br />Maintaining Database</li>
+              <li><span>Angular</span><br />Maintaining Database</li>
+              <li><span>Angular</span><br />Maintaining Database</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022 - Current</span><br />Full Stack Developer @ NCSI Techologies Pvt. Ltd.</li>
+              <li><span>2020 - 2022</span><br />Systems Engineer @ Infosys Ltd.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2016 - 2020</span><br />C.S.E. @ Dr. A.P.J. Abdul Kalam UIT Jhabua</li>
+              <li><span>2013-2015</span><br />HSC(XII) @ D.A.V Public School Burhar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------- services --------- -->
+  <div id="myprojects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="myprojects-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web APP Development</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo tempora ad vitae ab fugiat suscipit, deleniti velit veniam molestiae minima nemo, inventore accusamus illum delectus veritatis saepe assumenda non? Veritatis!
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-crop-alt"></i>
+          <h2>Backend Development</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo tempora ad vitae ab fugiat suscipit, deleniti velit veniam molestiae minima nemo, inventore accusamus illum delectus veritatis saepe assumenda non? Veritatis!
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Full Stack Development</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo tempora ad vitae ab fugiat suscipit, deleniti velit veniam molestiae minima nemo, inventore accusamus illum delectus veritatis saepe assumenda non? Veritatis!
+          </p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -----------My Certificates--------------- -->
+  <div id="certificates">
+    <div class="container">
+      <h1 class="subtitle">My Certificates</h1>
+      <div class="certificates-list">
+        <div class="certificate">
+          <img src="images/Internship Certificate.jpg" alt="certificate1">
+          <div class="layer">
+            <h3>Internship Certificate</h3>
+            <p>Developed a Car Rental Website Using Ruby on Rails</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="certificate">
+          <img src="images/ncs secureflag appreciation.png" alt="certificate2">
+          <div class="layer">
+            <h3>Music App</h3>
+            <p>The app lets you listen to the music avialable all over the world. Do visit the website.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="certificate">
+          <img src="images/secureFlag.jpeg" alt="certificate3">
+          <div class="layer">
+            <h3>Online Shopping App</h3>
+            <p>The app lets you order items around the world. Do visit the website.</p>
+            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See more</a>
+    </div>
+  </div>
+
+  <!-- ----------------Contact--------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>jk.jitendra725@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>9630154746</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/jitendra-tiwari-004943182/"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/jkjitendra"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.hackerrank.com/profile/jitendrakumarti1"><i class="fa-brands fa-hackerrank"></i></a>
+            </div>
+            <a href="images/jitendra_tiwari_resume_.pdf" download class="btn btn2">Download Resume</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required />
+            <input type="email" name="Email" placeholder="Your Email" required />
+            <textarea name="Message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright @ Jitendra</p>
+    </div>
+  </div>
+
+
+  <script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+    function openTab(tabName) {
+      for(tabLink of tabLinks) {
+        tabLink.classList.remove("active-link");
+      }
+      for(tabContent of tabContents) {
+        tabContent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabName).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openMenu() {
+        sidemenu.style.right = "0";
+      }
+      function closeMenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxXmoWCuMlgHzhenTuHd8WFGw8hYkNtHy5JPHcQkOKjm2-t2yxPB57mwibhSXolT8kjBQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg");
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            console.log('Success!', response);
+            setTimeout(function() {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+  </body>
+
+</html>
